@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Spire.PDF</id>
+        <version>3.9.431</version>
+        <title>Spire.PDF for .NET</title>
+        <authors>Administrator</authors>
+        <owners>e-iceblue</owners>
+        <licenseUrl>http://www.e-iceblue.com/Knowledgebase/Licensing/License-Agreement.html</licenseUrl>
+        <projectUrl>http://www.e-iceblue.com/Introduce/pdf-for-net-introduce.html</projectUrl>
+        <iconUrl>http://www.e-iceblue.com/images/product_logo/product_buy/pdfnet.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Spire.PDF for .NET is a versatile PDF library that enables software developers to generate, edit, read and manipulate PDF files within their own .NET applications. As a standalone PDF component, Spire.PDF for .NET provides users an incredible wealth of features without installing Adobe Acrobat. This component is completely written in C#, but also supports VB.NET, Windows Forms and ASP.NET. 
+With the Spire.PDF for .NET API, you can get the ability to read PDF text and image even attachments with high efficiency. Even the special content such as language written from right to left can be extracted such as Herbrew and Arabic. Other basic features such as text, image, table, shapes, hyperlinks, bookmark, headings, footnotes, lists, form fields, pagination, booklet barcode, attachments, transparency, annotations, actions, overlay etc all work great for users. As for security, Spire.PDF for .NET enables you to protect your PDF files by passwords and digital signature.</description>
+        <summary>This package is designed to introduce developers a .NET PDF application Spire.PDF for .NET. This PDF application enables users to create, read, edit and maniplate PDF files with high efficiency.</summary>
+        <releaseNotes>Spire.PDF 3.9.431
+
+New Features:
+Adds the PdfPrintSettings.SelectMultiPageLayout method to support printing multiples pages per sheet.
+Bug Fixes:
+Fixed the issue that caused content garbled when convert to Image.
+Fixed the issue that caused content lost when convert to Image.
+Fixed the issue that caused SaveAsImage method threw KeyNotFoundException error.
+Fixed the issue that caused FindText method threw FormatException error.
+Fixed the issue where the text and image can't be drawn on layer.
+Fixed the issue that caused the result incorrect when split document.
+
+
+Spire.PDF 3.9.421
+
+Bug Fixes:
+Fixes the issue that caused "Insufficient data for an image" error when repeatedly loading document to insert image and save it.
+
+Adjustments:
+
+Obsoletes the set property of PdfSecurity.Permissions and PdfSecurity.KeySize.
+Obsoletes PdfSecurity.OwnerPassword, PdfSecurity.UserPassword property.
+Obsoletes PdfSecurity.ResetPermissions and PdfSecurity.SetPermissions method, and use PdfSecurity.Encrypt method instead.
+
+Spire.PDF 3.9.407
+Supports to convert PDF into Html stream.
+Adds new method TryCompressImage to compress image in PDF for reducing the size of PDF.
+Supports to convert PDF to SVG with custom height and width.
+Fixes the issue that the text was flipped and cut off when converting PDF to image.
+Fixes the issue that caused black background of image when printing.
+Fixes the issue that caused wrong signature after multiple signatures.
+Fixes the issue that the attachment cannot be added in PDF.
+Fixes the issue that the data in the fields were missing when converting to image.
+Fixes the issue that content cannot be printed in the center when using ActualSize and AutoPortraitOrLandscape.
+Fixes the issue that caused NullReferenceException when converting PDF to XPS.
+Fixes the issue that caused exception when loading XPS when system language is Russian.
+Fixes the issue that caused messy code when extracting text.
+Fixes the issue that content was cut off when printing.
+Fixes the issue that the method VerifySignature returned wrong Boolean value.
+Fixes the issue that the accents above some characters were printed at wrong position.
+
+
+Spire.PDF 3.9.360
+New Features:
+Support to print specific page.
+Public the name of the layer.
+Support to set the alignment for the signature content.
+Support to get the row by searching specific text.
+
+Adjustments:
+
+ Adjust the print function, sample code:
+ Adjust the code about layers.
+ Adjust the code about security, new code:
+
+Bug solutions:
+
+Fixes the issue that cannot delete layer.
+Fixes the issue that caused the character wrong after deleting image.
+Fixes the issue that the image cannot be deleted.
+Fixes the issue that caused NullReferenceException when flatten form field.
+Fixes the issue that the checkboxField is not checked after setting checkboxField.Checked as true.
+Fixes the issue that caused content missing after replacing image.
+Fixes the issue that caused the content in invisible region shows after creating Booklet.
+Fixes the issue that caused the original content changed when appending a new page.
+Fixes the issue that the object cloned from PdfDocument returns null.
+Fixes the issue that caused the size of document increased after compressing images.
+Fixes the issue that caused the background changed to black when converting PDF to XPS.
+Fixes the issue that the size of document grows too much when converting image to pdf.
+Fixes the issue that caused spot colors setting in image missing when drawing image to PDF.
+Fixes the issue that custom properties don't work.
+Fixes the issue that cannot delete custom properties.
+Fixes the issue that caused small drilling holes missing when printing the PDF.
+Fixes the issue that custom properties missing after setting own password.
+
+
+
+Spire.PDF 3.9.285
+Supports to convert PDF to HTML.
+Fixes the issue that the paragraph number and heading text were swapped when extracting text.
+Improve the print function to make the printed result be same as what Adobe prints.
+Fixes the issue that caused char spacing in flattened field incorrect when saving to Image.
+Fixes the issue that caused some Chinese characters cannot be printed when printing.
+
+
+Spire.PDF 3.9.266
+
+Fixes the issue that caused messy code in text field after merging files.
+Fixes the issue that caused FormatException when extract text.
+Resolves the issue where the color filled in graph is incorrect when save to image.
+Fixes the issue that caused NullReferenceException when convert to image.
+Fixes the issue that caused checked status for other name checkboxes after checking one checkbox.
+Fixes the issue that caused text missing when convert PDF to XPS.
+
+Spire.PDF 3.9.226
+Supports to convert PDF to SVG stream.
+Adjusts the properties of PdfSignature.
+Fixes the issue that caused the NullReferenceException when converting to image.
+Fixes the issue that the property SetButtonImage doesn't work.
+Fixes the issue that caused inaccurate position of searched text. 
+Fixes the issue that caused incorrect content when converting xps to pdf.
+Fixes the issue that cannot get font of searched text.
+Fixes the issue that the position of text changed when converting pdf to xps.
+Fixes the issue that the position of the content is wrong when printing.
+Fixes the issue that the line missing when printing.
+Fixes the issue that the values of combox field are blank when clicking view this version in Adobe with Italian setting after filling the combox field and signing the signature field. 
+
+
+Spire.PDF 3.9.189
+Support to fill image object into the signature field.
+Fixes the issue that Calculate action didn't work.
+Fixes the issue that the extrat signature field was added into document automatically after signing signature field.
+Fixes the issue that the setting of orientation when printing didn't wrok.
+Fixes the issue that the value of combox field was blank when clicking view this version in Adobe after filling the combox field and signing the signature field.
+Fixes the issue that caused the NullReferenceException when load PDF file.</releaseNotes>
+        <copyright>Copyright © 2017 e-iceblue. All Rights Reserved.</copyright>
+        <language>en-US</language>
+        <tags>PDF application,PDF library, component, control, to XPS, Image, HTML, HTML PDF,PDF/A</tags>
+    </metadata>
+</package>
